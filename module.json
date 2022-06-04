@@ -17,5 +17,7 @@
 ],
 "system": [
 	"dnd5e"
-]
+],
+"manifest": "https://github.com/pleonr/discipulo-do-vacuo/releases/download/1.0.0/module.json",
+"download": "https://github.com/pleonr/discipulo-do-vacuo/releases/download/1.0.0/module.zip",
 }
