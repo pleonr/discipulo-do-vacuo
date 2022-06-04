@@ -1,0 +1,391 @@
+```metadata
+title: Void! PT-BR
+description: A Monk's Monastic Tradition from 3.5e to 5e.
+tags: ''
+systems:
+  - 5e
+renderer: V3
+
+```
+
+```css
+@import url(https://rawcdn.githack.com/5e-Cleric/fonts-/b1e03a8509f6b135d02a887a64c5cabde4f27b4c/Creditfonts.css);
+@import url("https://rawcdn.githack.com/5e-Cleric/fonts-/6ff92242119b0024c605ae83a45f87dbc2cff366/extradndfonts.css");
+
+/*This template is made for you, and therefore, you can adjust everything, if you need any help, look at google, if you don't find anything, look again, still nothing? then ask me at https://www.reddit.com/user/5e_Cleric or mention me (u/5e_Cleric) on a reddit post*/
+.CoverTitle {
+position:absolute;
+    top:1%;
+    right:0%;
+    height:72px;
+    width:100%;
+    padding-top:75px;
+    text-align:center;
+    color: #58180D;
+	background-image:url(https://i.imgur.com/hBdjwi6.png);   /*Sets the DND symbol*/
+	background-position:top center;
+	background-repeat:no-repeat;
+    background-size:contain;
+}
+.CoverTitle h1 {
+	position:relative;
+	padding-right:40px;
+	padding-left:40px;
+  font-size:645%;
+	text-transform:uppercase;
+  font-family:nodesto_caps_condensed_bold-webfont; /*gives you the title of the book*/
+	color:#FFF;
+  font-variant:small-caps;
+	-webkit-text-stroke-width: 3px; 
+  -webkit-text-stroke-color: #000; 
+}
+.CoverTitle h1:after {  /*Sets the Red line, in a position relative to the title*/
+	position:relative;
+	 left:20%;
+	content: "";
+	display: block;
+    height: 20px;
+	background-image:url(https://i.imgur.com/1RdBBag.png); 
+	background-position:relative;
+	background-repeat:no-repeat;
+  background-size:60%;
+}
+.CoverTitle h1 + p:first-letter { /*unsets the drop cap*/
+    all:unset;    
+}
+.CoverTitle h1 + p:first-line {  /*unsets the small caps on the first line after a h1*/
+    all: unset;
+}
+.CoverTitle p {          /*Sets the book's resume*/
+	position:absolute;
+    bottom:-900px;
+	text-align:center;
+	text-justify:center;
+	padding-right:100px;
+	padding-left:100px;
+	font-size:180%;
+	font-weight:900;
+	font-family:ModestoW01-LightText;
+	color:#fff;
+	text-shadow:
+    -2px -2px 0 #000,
+     0   -2px 0 #000,
+     2px -2px 0 #000,
+     2px  0   0 #000,
+     2px  2px 0 #000,
+     0    2px 0 #000,
+    -2px  2px 0 #000,
+    -2px  0   0 #000;
+}
+
+.CoverTitle p:first-letter {
+	text-transform:uppercase !important;
+}
+
+.CoverTitle p:before {   /*Sets the Flag*/
+position:absolute;
+	top:-260px;
+	left:0px;
+		height:240px;
+    width:450px;
+	content:'';
+background-image:url(https://i.imgur.com/LyG6SdT.png);   
+		background-position:bottom center;
+		background-repeat:no-repeat;
+  	background-size:contain;
+		z-index: 2;
+}
+
+.CoverImage img {    /*This tries to size your image and fit it, but works different with each picture, you'll have to deal with it, sorry*/
+	position:absolute;
+  	top:0px;
+	left:-100px;
+	height:1056px;
+	z-index: -1;
+}
+	
+.page#p1:after {    /*Unsets the golden line footer*/
+display:none;
+}
+
+
+
+
+/*Back cover*/
+
+
+/*After the fonts goes all the code*/
+.BackCover {
+	position:absolute;
+  	top:0px;
+  	left:-20px; 
+		height:100%;
+    width:420px;
+background-image:url(https://i.imgur.com/zi4SkEt.png);   /*Sets the Black half page cover*/
+		background-position:bottom center;
+		background-repeat:no-repeat;
+  	background-size:cover;
+}
+
+.BackCover h1+p::first-letter{ /*Unsets the drop cap*/
+all:unset;
+}
+
+.BackCover h1+p::first-line{  /*Unsets the small caps first line*/
+	all:unset;
+}
+
+.BackCover h1 {          /*Back Title, red caps*/
+position:relative;
+	min-width:400px;
+	padding-top:90px;
+	padding-right:80px;
+	padding-left:70px;
+	margin-bottom:15px;
+  font-size:400%;
+  font-family:nodesto_caps_condensed_bold-webfont; 
+	color:#ED1C24	;
+  font-variant:small-caps;
+}
+
+.block.BackCover p {  /*configures how normal text will be*/
+	padding-left:55px;
+	padding-right:80px;
+	color:#fff
+}
+
+.BackCover img {     /*Sets your bakcground image, you will likely have to change this values for your own image*/
+	position:absolute;
+  	top:0px;
+    left:-950px;
+		height:1056px;
+		z-index: -1;
+}
+
+.Covertext:after {
+	background-image:url(https://i.imgur.com/1RdBBag.png);  /*sets the red line and the text under it.*/
+	background-position:middle center;
+	background-repeat:no-repeat;
+  background-size:60%;
+text-align:center;
+	 line-height: 150%;
+position:relative;
+	 left:20%;
+		top:20px !important;
+	padding-right:160px;
+	display: block;
+	content: "‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎ For use with the fifth edition  ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎manuals, existing and to exist.";
+	max-width:350px;
+	color:#fff;
+   height: 20px;
+	
+}
+
+.Made{
+	min-height:200px;
+	filter:invert(100%);
+	background-image:url(https://i.imgur.com/r7nvH4z.png); /*Sets the HB cauldron, please leave this as is or change it's size, but do not delete it as we should give them appropiate credit*/
+	background-blend-mode:multiply;
+	background-position:middle center;
+	background-repeat:no-repeat;
+  background-size:30%;
+	position:absolute;
+	 left:35%;
+		bottom:10px;
+	padding-right:160px;
+}
+
+.Made:before {
+		filter:invert(100%);
+	Position:absolute;
+	bottom:210px;
+	left:-22px;
+content:"Made with The Homebrewery"; /*sets the credit line: made with the homebrewery*/
+	color:#fff;
+	font-family:nodesto_caps_condensed_bold-webfont;
+	font-size:150%;
+	-webkit-transform:scale(1.6, 1.0);
+}
+
+.page#p3:after{ /*Unsets the golden line at the end of the page for page 1(#p1)*/
+	all:unset;
+}
+
+
+
+/*This template is made for you, and therefore, you can adjust everything, if you need any help, look at google, if you don't find anything, look again, still nothing? then ask me at https://www.reddit.com/user/5e_Cleric or mention me (u/5e_Cleric) on a reddit post*/
+.creditpage h2 {		/*Sets the Credits and On the Cover font*/
+font-family:martel_sanssemibold;
+	font-size:150%;
+}
+.credits {					/*Sets the credits 2 columns*/
+	column-count:2;
+	height:300px;
+}
+.Authors{						/*Sets the columns for the content creating people(top right)*/
+	column-count:2	
+}	
+.Authors p {				/*sets the font for the 'Cleric A' type text on content creating people(top right)*/
+	font-size:11px
+}
+.creditpage h3 {		/*Sets the fonts to the underlined headers*/
+	font-family:martel_sanssemibold;
+	font-size:140%;border-bottom: 0.5mm solid #ac5555 ;
+}
+.creditpage h3::first-letter {		/*Sets the first letter in the underlined headers to be bigger*/
+  font-size: 140%;
+}
+.creditpage p {                 /*Sets the font for the normal text on the credits and the on the cover snippet*/
+	font-family:martel_sansregular;
+	font-style:normal;
+}
+.creditpage strong {								/*Sets the font for the bold titles in the credits section*/
+	font-family:martel_sansregular;
+	font-weight: bold;
+}
+.Playtesters{ /*sets the playtesters 4 column style*/
+	column-count:4	
+}	
+.Playtesters p { /*Sets the playtesters people on their specific font size*/
+	font-size:11px;
+	line-height:20px;
+}
+.page#p1 .wide p { /*Sets the font size of the wide block at the end*/
+	font-size:11px
+}
+.page#p1:after { /*Unsets the golden line footer*/
+	display:none
+}
+```
+
+
+{{CoverTitle
+# Discipulo do Vacuo
+
+Uma adaptação do Discípulo do vácuo da 3.5e para a 5e
+
+}}
+
+{{CoverImage
+![background](https://preview.redd.it/rkag2r1v4fa51.jpg?auto=webp&s=665d302f32d9ea0aba9818386fec1dfc29230e01) 
+}}
+
+\page
+{{BackCover
+![background image](https://preview.redd.it/rkag2r1v4fa51.jpg?auto=webp&s=665d302f32d9ea0aba9818386fec1dfc29230e01)
+# Discípulo do Vácuo
+{{Covertext
+
+Uma fonte antiga e mística de poder que transcende barreiras e faz de seus usuários poderosos aliados ou temidos inimigos
+::
+- Uma tradição monástica para monges derivados do Discípulo do vácuo da terceira edição para a quinta edição.
+:
+
+- Espero que tu goste Henrique!
+}}
+
+{{Made
+
+}}
+}}
+
+\page
+## Discípulo do Vácuo
+De todas as forças elementais que compõem o universo, a mais poderosa e a mais difícil de se controlar é a que fica entre todas as outras: o Vácuo. O Discipulos possuem a compreensão de que tudo no mundo é composto de todos os elmentos básicos, unidos por meio da essência intangível. O Vácuo equivale ao silêncio entre as notas da música, dando ritmo e melodia ao todo. Para aqueles que compreendem a relação do Vácuo com todas as outras coisas e têm a habilidade inata de perceber intuitivamente esta relação, os conceitos de distância e forma tornam-se irrelevantes.
+
+Os discípulos do Vácuo começam seu treinamento através de concentração continuam acumulando sua habilidade conforme avançam em níveis.
+
+
+## Caminho do Vácuo
+Ao alcançar o terceiro nível o monge pode escolher uma tradição monástica, diferentes monges utilizam diferentes tradições monásticas, algumas focadas em habilidades físicas e outras mágicas. Aqueles que treinam para dominar o Vácuo precisam se desvencilhar de limitações mundanas.
+
+##### Habilidades do Vácuo
+| Pontos de Ki | Habilidade |
+|:----:|:-------------|
+| 2 | *Sentir o Vácuo* |
+| 1 | *Momento de Clareza* |
+| 4 | *Liberar o Vácuo, Supressão do Vácuo* |
+| 6 | *Alterando o Curso* |
+| - | *Golpe do Vácuo* |
+
+
+#### Sentir o Vácuo
+*3° nível*
+
+**Tempo De Conjuração:** :: 1 ação
+**Alcance:**             :: variável
+**Duração:**             :: concentração, até 1 minuto
+**Pontos de Ki**				 :: 2
+
+A primeira técnica despertada por quem segue o Caminho do Vácuo é a habilidade de desligar sua mente e sentir o mundo ao seu redor, exporando todas as camadas do universo jamais vistas por outras pessoas. Enquanto canaliza *Sentir o Vácuo*, a consciência do Discípulo do Vácuo abandona seu corpo e viaja pelo mundo, permitindo que utilize seus sentidos normais (visão, audição, paladar, tato e olfato) para perceber a área, pessoa ou objeto à qual direcionar sua atenção. O alcance inicial é de até 100 metros. Enquanto canaliza o Discípulo do Vácuo deve permanecer imóvel e concentrado.
+
+
+\column
+O Escolhido pelo Vácuo não pode sentir através das divisões planares. Portanto, mesmo que dentro do seu alcance ele não pode *Sentir o Vácuo* de um plano diferente.
+
+No 6º nível monge o Discípulo do Vácuo pode utilizar *Detectar Magia* em uma área, pessoa ou objeto ao utilizar *Sentir o Vácuo*. Através do seu treinamento o Discípulo do Vácuo aumenta o alcance de *Sentir o Vácuo* para até 1 kilometro. 
+
+No 11º nível monge Discípulo do Vácuo pode utilizar *Discernir Mentiras*. ao utilizar *Sentir o Vácuo*.
+Através do seu treinamento o Discípulo do Vácuo aumenta o alcance de *Sentir o Vácuo* para até 10 kilometros.
+
+No 17º nível monge Discípulo do Vácuo pode utilizar *Detectar Pensamentos* enquanto utilizar *Sentir o Vácuo*.
+Através do seu treinamento o Discípulo do Vácuo aumenta o alcance de *Sentir o Vácuo* para até 100 kilometros.
+
+#### Momento de Clareza
+*6° nível*
+
+**Tempo De Conjuração:** :: 1 ação bônus
+**Alcance:**             :: toque
+**Componentes:**         :: Somático
+**Duração:**             :: uma ação
+**Pontos de Ki**				 :: 1
+
+No sexto nível, o Discípulo do Vácuo pode utilizar uma ação bônus para tocar um aliado e concede-lo a habilidade temporária para utilizar qualquer perícia ou ferramenta como se fosse treinado nela no seu próximo uso. Essa habilidade sobrenatural não exige uma ação e funciona somente para a duração do teste.
+
+#### Alterando o Curso
+*6° nível*
+
+**Tempo De Conjuração:** :: 1 ação bônus
+**Alcance:**             :: pessoal
+**Componentes:**         :: Somático
+**Duração:**             :: uma ação
+**Pontos de Ki**				 :: 4
+
+No sexto nível o Discípulo do Vácuo pode adicionar um bônus de +20 em um único ataque ou na utilização de perícia ou ferramenta, não pode ser transferido. Se for um ataque, o alvo receberá desvantagem no seu próximo ataque.
+
+\page
+
+#### Liberar o Vácuo 
+*11° nível*
+
+**Tempo De Conjuração:** :: 1 ação bônus
+**Alcance:**             :: toque
+**Componentes:**         :: Somático
+**Pontos de Ki**				 :: 4
+
+Um Discípulo do Vácuo pode criar um selo mágico ao tocar um aliado em forma de tatuagem, para utilizar o portador deve cobrir o selo com a própria mão. Esse selo pode ser utilizado para conceder vantagem em uma salvaguarda, ataque ou na utilização de perícia ou ferramenta. O selo desaparece após uso ou após o portador realizar um descanso curto.
+
+#### Supressão do Vácuo 
+*11° nível*
+
+**Tempo De Conjuração:** :: 1 ação bônus
+**Alcance:**             :: toque
+**Componentes:**         :: Somático
+**Duração:**             :: uma ação
+**Pontos de Ki**				 :: 4
+
+O Discípulo do Vácuo pode desferir um ataque extra corpo a corpo, ignorando a classe de armadura do alvo (CA).
+
+
+#### Golpe do Vácuo 
+*17° nível*
+
+**Tempo De Conjuração:** :: 1 ação bônus
+**Alcance:**             :: toque
+**Componentes:**         :: Somático
+
+Uma vez por dia o Discípulo do Vácuo realiza um ataque extra utilizando o poder do Vácuo contra o inimigo. Em caso de acerto role 1d4 + 2, o valor obtido é subtraído de todas jogadas de ataques, além de testes de habilidade e de salvaguarda do inimigo afetado até que ele faça um descanso curto. Você adiciona o valor obtido em todos os seus ataques contra esse inimigo específico.
+
+
+\column
+

@@ -1,0 +1,21 @@
+{
+"name": "discipulo-do-vacuo",
+"title": "LATE - Discípulo do Vácuo",
+"description": "<p>Uma adaptação para a 5e da classe de prestígio da 3.5</p>",
+"version": "1.0.0",
+"minimumCoreVersion": "0.7.10",
+"compatibleCoreVersion": "9",
+"author": "pleonr",
+"packs": [
+	{
+	"name": "discipulo-do-vacuo",
+	"label": "Caminho do Vácuo",
+	"path": "/packs/discipulo-do-vacuo.db",
+	"entity": "Item",
+	"type": "Item"
+	}
+],
+"system": [
+	"dnd5e"
+]
+}
