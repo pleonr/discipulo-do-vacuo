@@ -7,17 +7,15 @@
 "compatibleCoreVersion": "9",
 "author": "pleonr",
 "packs": [
-	{
-	"name": "discipulo-do-vacuo",
-	"label": "Caminho do Vácuo",
-	"path": "/packs/discipulo-do-vacuo.db",
-	"entity": "Item",
-	"type": "Item"
-	}
+{
+"name": "discipulo-do-vacuo",
+"label": "LATE - Caminho do Vácuo",
+"path": "/packs/discipulo-do-vacuo.db",
+"entity": "Item",
+"type": "Item"
+}
 ],
-"system": [
-	"dnd5e"
-],
-"manifest": "https://github.com/pleonr/discipulo-do-vacuo/releases/download/1.0.0/module.json",
-"download": "https://github.com/pleonr/discipulo-do-vacuo/releases/download/1.0.0/module.zip",
+  "url": "https://github.com/pleonr/discipulo-do-vacuo/",
+  "manifest": "https://github.com/pleonr/discipulo-do-vacuo/releases/download/1.0.0/module.json",
+  "download": "https://github.com/pleonr/discipulo-do-vacuo/releases/download/1.0.0/module.zip"
 }
